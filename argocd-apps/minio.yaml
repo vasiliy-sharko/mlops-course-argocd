@@ -9,8 +9,9 @@ spec:
     namespace: application
     server: https://kubernetes.default.svc
   source:
-    chart: oci://registry-1.docker.io/bitnamicharts/minio
+    repoURL: oci://registry-1.docker.io/bitnamicharts/minio
     targetRevision: "17.0.19"
+    path: .
     helm:
       values: |
         image:
