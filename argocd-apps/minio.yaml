@@ -4,14 +4,13 @@ metadata:
   name: minio
   namespace: argocd
 spec:
+  project: default
   destination:
     namespace: application
     server: https://kubernetes.default.svc
-  project: default
   source:
-    repoURL: oci://registry-1.docker.io/bitnamicharts/minio
-    targetRevision: 17.0.19
-    path: .
+    chart: oci://registry-1.docker.io/bitnamicharts/minio
+    targetRevision: "17.0.19"
     helm:
       values: |
         auth:
