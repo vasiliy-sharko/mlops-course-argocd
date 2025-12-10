@@ -13,6 +13,9 @@ spec:
     targetRevision: "17.0.19"
     helm:
       values: |
+        image:
+          repository: minio/minio
+          tag: latest
         auth:
           rootUser: minio
           rootPassword: minio123
