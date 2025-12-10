@@ -19,7 +19,8 @@ spec:
           tag: latest
         console:
           image:
-            repository: public.ecr.aws/bitnami/minio-object-browser
+            registry: public.ecr.aws
+            repository: bitnami/minio-object-browser
             tag: latest
         global:
           security:
