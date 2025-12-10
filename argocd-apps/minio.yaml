@@ -11,8 +11,9 @@ spec:
   source:
     repoURL: oci://registry-1.docker.io/bitnamicharts/minio
     targetRevision: 17.0.19
+    path: .
     helm:
-      valuesObject:
+      values: |
         auth:
           rootUser: minio
           rootPassword: minio123
