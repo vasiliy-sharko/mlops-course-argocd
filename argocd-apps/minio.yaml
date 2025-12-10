@@ -17,6 +17,9 @@ spec:
         image:
           repository: minio/minio
           tag: latest
+        global:
+          security:
+            allowInsecureImages: true
         auth:
           rootUser: minio
           rootPassword: minio123
