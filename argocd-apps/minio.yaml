@@ -17,6 +17,10 @@ spec:
         image:
           repository: minio/minio
           tag: latest
+        console:
+          image:
+            repository: public.ecr.aws/bitnami/minio-object-browser
+            tag: latest
         global:
           security:
             allowInsecureImages: true
